@@ -5,10 +5,10 @@ const SEOHead = ({
   title = 'Conversor de Divisas Online Gratis 2025 - EUR USD MXN ARS | Convertidor de Monedas',
   description = 'Conversor de divisas online gratis 2025. Convierte EUR, USD, MXN, ARS y más de 15 monedas con tasas de cambio en tiempo real. Calculadora rápida y precisa.',
   keywords = 'conversor divisas, cambio divisas, euro dolar, dolar peso mexicano, calculadora divisas, tasas de cambio, convertidor monedas',
-  url = 'https://convertidordivisas.com',
-  image = 'https://convertidordivisas.com/og-image.png'
+  url = 'https://convertidordivisas.es',
+  image = 'https://convertidordivisas.es/og-image.png'
 }) => {
-  const siteName = 'ConvertidorDivisas.com';
+  const siteName = 'ConvertidorDivisas.es';
 
   return (
     <Helmet>
