@@ -110,15 +110,15 @@ const BlogSection = ({ fullPage = false }) => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Blog",
-          "name": "Blog de ConvertidorDivisas.com",
+          "name": "Blog de ConvertidorDivisas.es",
           "description": "Artículos y guías sobre conversión de divisas, finanzas personales y ahorro",
-          "url": "https://convertidordivisas.com/blog",
+          "url": "https://convertidordivisas.es/blog",
           "blogPost": blogPosts.map(post => ({
             "@type": "BlogPosting",
             "headline": post.title,
             "description": post.excerpt,
             "datePublished": post.date,
-            "url": `https://convertidordivisas.com/blog/${post.slug}`
+            "url": `https://convertidordivisas.es/blog/${post.slug}`
           }))
         })}
       </script>
