@@ -89,8 +89,8 @@ const SEOHead = ({
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": siteName,
-          "url": "https://convertidordivisas.com",
-          "logo": "https://convertidordivisas.com/logo.png",
+          "url": "https://convertidordivisas.es",
+          "logo": "https://convertidordivisas.es/logo.png",
           "sameAs": [
             "https://twitter.com/convertidordivisas",
             "https://facebook.com/convertidordivisas"
