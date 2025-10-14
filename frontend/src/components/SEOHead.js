@@ -56,7 +56,7 @@ const SEOHead = ({
           "provider": {
             "@type": "Organization",
             "name": siteName,
-            "url": "https://convertidordivisas.com"
+            "url": "https://convertidordivisas.es"
           }
         })}
       </script>
