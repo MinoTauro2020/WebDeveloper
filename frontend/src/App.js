@@ -134,7 +134,7 @@ function HomePage() {
             </h2>
             
             <p className="text-gray-700 mb-4">
-              <strong>ConvertidorDivisas.com</strong> es la herramienta definitiva para convertir monedas online de forma gratuita. 
+              <strong>ConvertidorDivisas.es</strong> es la herramienta definitiva para convertir monedas online de forma gratuita. 
               Ya sea que necesites saber <strong>cuánto es 100 euros en dólares</strong>, 
               <strong>cuál es el precio del dólar en pesos mexicanos hoy</strong>, o 
               <strong>convertir libras esterlinas a euros</strong>, nuestra calculadora de divisas te proporciona 
@@ -279,7 +279,7 @@ function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold text-lg mb-4">ConvertidorDivisas.com</h4>
+              <h4 className="font-bold text-lg mb-4">ConvertidorDivisas.es</h4>
               <p className="text-gray-400 text-sm">
                 El conversor de monedas más rápido y preciso de Internet. Tasas actualizadas en tiempo real.
               </p>
@@ -308,7 +308,7 @@ function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2025 ConvertidorDivisas.com - Todos los derechos reservados</p>
+            <p>&copy; 2025 ConvertidorDivisas.es - Todos los derechos reservados</p>
             <p className="mt-2">Tasas de cambio actualizadas mediante Exchange Rate API</p>
           </div>
         </div>
@@ -343,7 +343,7 @@ function ConversionPage({ from, to }) {
         <nav className="container mx-auto px-4 py-4">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-3xl">💱</span>
-            <span className="text-white font-bold text-xl">ConvertidorDivisas.com</span>
+            <span className="text-white font-bold text-xl">ConvertidorDivisas.es</span>
           </Link>
         </nav>
       </header>
@@ -376,7 +376,7 @@ function BlogPage() {
         <nav className="container mx-auto px-4 py-4">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-3xl">💱</span>
-            <span className="text-white font-bold text-xl">ConvertidorDivisas.com</span>
+            <span className="text-white font-bold text-xl">ConvertidorDivisas.es</span>
           </Link>
         </nav>
       </header>
@@ -398,7 +398,7 @@ function BlogPost() {
         <nav className="container mx-auto px-4 py-4">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-3xl">💱</span>
-            <span className="text-white font-bold text-xl">ConvertidorDivisas.com</span>
+            <span className="text-white font-bold text-xl">ConvertidorDivisas.es</span>
           </Link>
         </nav>
       </header>
