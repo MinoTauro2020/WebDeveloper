@@ -17,6 +17,7 @@ const CurrencyConverter = ({ defaultFrom = 'EUR', defaultTo = 'USD' }) => {
     if (amount > 0) {
       convertCurrency();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [amount, fromCurrency, toCurrency]);
 
   const fetchCurrencies = async () => {
