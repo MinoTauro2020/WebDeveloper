@@ -92,9 +92,15 @@ Aplicación web completa para conversión de divisas en tiempo real con SEO extr
 
 **Backend** (`/app/backend/.env`):
 ```bash
-MONGO_URL=mongodb://localhost:27017/conversor_divisas
 PORT=8001
+# No se requiere base de datos
+# Las tasas vienen de API externa (ExchangeRate-API)
 ```
+
+**✅ IMPORTANTE:** Este proyecto NO necesita base de datos porque:
+- Las tasas de cambio vienen de API externa gratuita
+- No hay usuarios ni datos que persistir
+- Todo funciona stateless (sin estado)
 
 **Frontend** (`/app/frontend/.env`):
 ```bash
