@@ -71,7 +71,7 @@ const SEOHead = ({
               "@type": "ListItem",
               "position": 1,
               "name": "Inicio",
-              "item": "https://convertidordivisas.com"
+              "item": "https://convertidordivisas.es"
             },
             {
               "@type": "ListItem",
