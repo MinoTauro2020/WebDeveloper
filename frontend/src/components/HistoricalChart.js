@@ -8,6 +8,7 @@ const HistoricalChart = ({ from = 'EUR', to = 'USD' }) => {
 
   useEffect(() => {
     fetchHistoricalData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [from, to, days]);
 
   const fetchHistoricalData = async () => {
