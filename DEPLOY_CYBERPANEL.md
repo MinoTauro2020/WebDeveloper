@@ -108,9 +108,15 @@ nano .env
 
 **Contenido:**
 ```bash
-MONGO_URL=mongodb://localhost:27017/conversor_divisas
 PORT=8001
+# No se requiere base de datos
+# Las tasas vienen de API externa gratuita
 ```
+
+**✅ IMPORTANTE:** Este proyecto NO necesita MySQL ni MongoDB porque:
+- Todas las tasas vienen de ExchangeRate-API (externa)
+- No hay usuarios ni datos que guardar
+- Funciona 100% stateless
 
 ### 3.3. Probar Backend
 
