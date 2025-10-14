@@ -1,12 +1,50 @@
--e 
-# Environment files
-*.env
-*.env.*
--e 
-# Environment files
-*.env
-*.env.*
--e 
-# Environment files
-*.env
-*.env.*
+# Dependencies
+node_modules/
+/frontend/node_modules/
+/backend/venv/
+
+# Production build
+/frontend/build/
+
+# Environment variables - MANTENER PLANTILLAS
+# .env files contienen placeholders, pero pueden tener valores reales localmente
+*.env.local
+*.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.pytest_cache/
+
+# Misc
+.cache/
+*.pid
+
+# Lock files (opcional - algunos prefieren commitearlos)
+# yarn.lock
+# package-lock.json
