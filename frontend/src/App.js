@@ -41,7 +41,7 @@ function HomePage() {
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-3xl">💱</span>
-            <span className="text-white font-bold text-xl">ConvertidorDivisas.com</span>
+            <span className="text-white font-bold text-xl">ConvertidorDivisas.es</span>
           </Link>
           <div className="hidden md:flex space-x-6">
             <Link to="/" className="text-white hover:text-yellow-300 transition">Inicio</Link>
