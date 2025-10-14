@@ -30,24 +30,9 @@ function App() {
 }
 
 function HomePage() {
-  const [rates, setRates] = useState(null);
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
-    fetchRates();
+    // Component mounted
   }, []);
-
-  const fetchRates = async () => {
-    try {
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/rates/EUR`);
-      const data = await response.json();
-      setRates(data);
-    } catch (error) {
-      console.error('Error fetching rates:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <div className="min-h-screen">
