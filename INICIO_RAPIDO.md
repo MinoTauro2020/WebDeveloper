@@ -69,6 +69,17 @@ REACT_APP_SITE_URL=https://TU_DOMINIO.com
 
 Edita `/app/frontend/public/sitemap.xml` y reemplaza todas las URLs.
 
+### 🗄️ ¿Necesito Base de Datos?
+
+**¡NO!** Este proyecto funciona 100% sin base de datos porque:
+- ✅ Tasas vienen de API externa (ExchangeRate-API)
+- ✅ No hay usuarios ni login
+- ✅ No hay datos que guardar
+- ✅ Todo funciona stateless
+
+**CyberPanel crea MySQL automáticamente, pero NO lo necesitas.**
+Si en el futuro quieres agregar usuarios/favoritos, lee: `/app/CYBERPANEL_MYSQL_OPCIONAL.md`
+
 ### 📦 Deploy en Producción
 
 #### 1. Build del Frontend
