@@ -48,3 +48,7 @@ coverage/
 # Lock files (opcional - algunos prefieren commitearlos)
 # yarn.lock
 # package-lock.json
+-e 
+# Environment files
+*.env
+*.env.*
