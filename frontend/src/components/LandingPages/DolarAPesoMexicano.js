@@ -15,9 +15,9 @@ const DolarAPesoMexicano = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="Conversor Dólar a Peso Mexicano: Cuanto es 100 Dólares en Pesos Hoy 2025"
-        description="Convierte dólares a pesos mexicanos en tiempo real. Tasas actualizadas USD MXN, gráficos y tips para remesas o viajes sin perder dinero."
-        keywords="dolar a peso mexicano, cuanto es 100 dolares en pesos mexicanos hoy, convertir dolares a pesos sin comision, tipo cambio usd mxn, remesas mexico"
+        title="Dólar a Peso Mexicano: Valor Actual, Factores Económicos y Proyecciones 2025"
+        description="Tipo de cambio USD a MXN actualizado en 2025. Análisis de remesas, nearshoring, políticas de Banxico, inflación y predicciones para el peso mexicano. Consejos para maximizar tus envíos."
+        keywords="dolar a peso mexicano, cuanto es 100 dolares en pesos mexicanos hoy, convertir dolares a pesos sin comision, tipo cambio usd mxn, remesas mexico, banxico, nearshoring mexico 2025"
         url="https://convertidordivisas.es/dolar-a-peso-mexicano"
       />
 
@@ -38,13 +38,14 @@ const DolarAPesoMexicano = () => {
         </nav>
         
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          Conversor Dólar a Peso Mexicano: Cuanto es 100 Dólares en Pesos Hoy
+          Dólar a Peso Mexicano: Valor Actual, Factores Económicos y Proyecciones 2025
         </h1>
         
         <p className="text-xl text-white/90 mb-8 max-w-4xl">
-          ¿Necesitas saber <strong>cuánto es 100 dólares en pesos mexicanos hoy</strong>? Nuestra herramienta 
-          te muestra el tipo de cambio <strong>USD a MXN</strong> actualizado en tiempo real. Ideal para 
-          remesas desde Estados Unidos, viajes a México o compras internacionales.
+          Descubre el <strong>tipo de cambio USD/MXN</strong> actualizado en 2025 con análisis completo de los 
+          factores que afectan al peso mexicano: políticas del Banco de México (Banxico), el impacto del nearshoring, 
+          inflación, remesas récord desde Estados Unidos y proyecciones económicas. Herramientas y consejos para 
+          maximizar el valor de tus envíos de dinero a México.
         </p>
 
         {/* Converter Widget */}
@@ -66,25 +67,34 @@ const DolarAPesoMexicano = () => {
             {/* Introduction */}
             <section className="mb-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                ¿Por Qué es Importante Conocer el Tipo de Cambio USD/MXN?
+                USD/MXN en 2025: Contexto Económico y Dinámicas del Peso Mexicano
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                El par <strong>dólar-peso mexicano (USD/MXN)</strong> es uno de los más relevantes en América 
-                Latina, con un volumen diario de transacciones superior a 100 mil millones de dólares. México 
-                es el principal socio comercial de Estados Unidos, y millones de personas dependen de las 
-                remesas enviadas desde EE.UU., que en 2024 superaron los 63 mil millones de dólares.
+                El par <strong>dólar-peso mexicano (USD/MXN)</strong> es el más negociado en América Latina, con 
+                un volumen diario superior a 100 mil millones de dólares. En 2025, el peso mexicano se encuentra 
+                en una posición relativamente fuerte, cotizando en un rango de 16.50-18.50 pesos por dólar, gracias 
+                a factores estructurales como el nearshoring, altas tasas de interés de Banxico (Banco de México) 
+                que se mantienen en 11%, y un flujo récord de remesas que alcanzó $65 mil millones en 2024.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Ya sea que envíes dinero a tu familia en México, planees un viaje turístico, realices 
-                inversiones o importes productos, conocer el <strong>tipo de cambio exacto</strong> te 
-                ayuda a maximizar el valor de tus dólares y evitar comisiones excesivas que pueden reducir 
-                significativamente la cantidad de pesos que recibes.
+                El fenómeno del <strong>nearshoring</strong> —la relocalización de empresas manufactureras de Asia 
+                a México para estar cerca del mercado estadounidense— ha transformado la economía mexicana. Sectores 
+                como automotriz, electrónica y aeroespacial están experimentando inversiones masivas, generando 
+                demanda de pesos y fortaleciendo la moneda. Ciudades como Monterrey, Guadalajara y Querétaro se han 
+                convertido en hubs industriales clave.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                En 2025, con el peso mexicano mostrando volatilidad debido a factores económicos internos 
-                y externos, es crucial tener acceso a información actualizada. Nuestro conversor te ofrece 
-                tasas en tiempo real, herramientas de conversión instantánea y análisis histórico para tomar 
-                mejores decisiones financieras.
+                Sin embargo, el peso enfrenta desafíos en 2025: la inflación persiste alrededor del 4-5% (por encima 
+                del objetivo del 3% de Banxico), las elecciones presidenciales de 2024 generaron incertidumbre inicial, 
+                y la desaceleración económica de Estados Unidos podría reducir la demanda de exportaciones mexicanas. 
+                Además, las políticas comerciales estadounidenses y la renegociación del T-MEC añaden volatilidad 
+                al tipo de cambio.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Para los millones de mexicanos que reciben remesas desde Estados Unidos (la segunda fuente de ingresos 
+                del país después del petróleo), entender estas dinámicas es crucial para maximizar el valor recibido. 
+                Una diferencia de 0.50 pesos en el tipo de cambio puede significar cientos o miles de pesos adicionales 
+                al año en remesas familiares.
               </p>
             </section>
 
@@ -277,6 +287,66 @@ const DolarAPesoMexicano = () => {
                 conversión de dólares a pesos, creando demanda que fortalece la moneda mexicana. Este 
                 fenómeno se aceleró post-pandemia y es un factor estructural positivo para el peso en 2025.
               </p>
+            </section>
+
+            {/* 2025 Predictions */}
+            <section className="mb-8">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                🔮 Proyecciones USD/MXN para 2025: Análisis y Perspectivas
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                El tipo de cambio peso mexicano-dólar en 2025 se encuentra en una coyuntura interesante. Bancos 
+                de inversión como BBVA, Citibanamex y Bank of America proyectan un rango de 16.50-19.50 pesos 
+                por dólar para el año, con tendencia a la fortaleza moderada del peso gracias a factores estructurales 
+                como el nearshoring y altas tasas de interés de Banxico.
+              </p>
+              
+              <h3 className="text-2xl font-bold text-gray-800 mb-3 mt-6">
+                Factores Alcistas para el Peso Mexicano (Menos Pesos por Dólar)
+              </h3>
+              <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                <li><strong>Nearshoring acelerado:</strong> Se espera que las inversiones por nearshoring alcancen 
+                $40-50 mil millones en 2025, creando demanda sostenida de pesos y atrayendo capital extranjero.</li>
+                <li><strong>Tasas de interés elevadas de Banxico:</strong> Con tasas alrededor del 11%, México 
+                ofrece uno de los mejores carry trades en mercados emergentes, atrayendo inversión en bonos.</li>
+                <li><strong>Remesas récord:</strong> Se proyecta que las remesas superen los $67 mil millones en 
+                2025, proporcionando flujo constante de dólares que fortalece al peso.</li>
+                <li><strong>Estabilidad política post-electoral:</strong> La transición gubernamental de 2024 
+                transcurrió sin sobresaltos mayores, reduciendo incertidumbre.</li>
+                <li><strong>Diversificación exportadora:</strong> Más allá del petróleo, sectores como automotriz, 
+                electrónica y aeroespacial generan divisas de manera estable.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-800 mb-3 mt-6">
+                Factores Bajistas para el Peso (Más Pesos por Dólar)
+              </h3>
+              <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                <li><strong>Desaceleración económica de EE.UU.:</strong> Si Estados Unidos entra en recesión, 
+                las exportaciones mexicanas caerían, reduciendo ingresos en dólares y debilitando al peso.</li>
+                <li><strong>Inflación persistente:</strong> La inflación mexicana por encima del objetivo del 3% 
+                de Banxico podría erosionar el poder adquisitivo del peso a largo plazo.</li>
+                <li><strong>Tensiones comerciales:</strong> Renegociaciones del T-MEC o imposición de aranceles 
+                por parte de EE.UU. podrían generar volatilidad y debilitar al peso.</li>
+                <li><strong>Precios del petróleo:</strong> Una caída significativa en precios petroleros afectaría 
+                negativamente las finanzas públicas y el tipo de cambio.</li>
+                <li><strong>Eventual recorte de tasas de Banxico:</strong> Si la inflación cede, Banxico podría 
+                bajar tasas en segunda mitad de 2025, reduciendo el atractivo del peso para inversionistas.</li>
+              </ul>
+
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">💡 Proyección Consenso 2025</h3>
+                <ul className="list-disc pl-6 text-gray-700 space-y-1">
+                  <li><strong>Q1 2025:</strong> 17.00-18.50 MXN por USD (estabilidad)</li>
+                  <li><strong>Q2 2025:</strong> 16.50-18.00 MXN por USD (posible fortalecimiento por nearshoring)</li>
+                  <li><strong>Q3 2025:</strong> 17.00-18.50 MXN por USD (volatilidad moderada)</li>
+                  <li><strong>Q4 2025:</strong> 17.50-19.00 MXN por USD (presión por eventual recorte de tasas)</li>
+                  <li><strong>Promedio anual esperado:</strong> 17.50-18.00 MXN por USD</li>
+                </ul>
+                <p className="text-gray-600 text-sm mt-3 italic">
+                  Estas proyecciones asumen continuidad de políticas económicas actuales y ausencia de shocks 
+                  externos mayores. El nearshoring es el factor más importante para mantener al peso fuerte.
+                </p>
+              </div>
             </section>
 
             {/* Practical Examples */}
