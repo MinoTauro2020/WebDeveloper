@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 import './App.css';
 import CurrencyConverter from './components/CurrencyConverter';
 import HistoricalChart from './components/HistoricalChart';
@@ -11,6 +11,7 @@ import EuroADolar from './components/LandingPages/EuroADolar';
 import DolarAPesoMexicano from './components/LandingPages/DolarAPesoMexicano';
 import EuroAPesoArgentino from './components/LandingPages/EuroAPesoArgentino';
 import DolarAEuro from './components/LandingPages/DolarAEuro';
+import blogPostsData from './data/blogPosts';
 
 function App() {
   return (
@@ -397,6 +398,34 @@ function BlogPage() {
 }
 
 function BlogPost() {
+  const { slug } = useParams();
+  const post = blogPostsData[slug];
+
+  // Redirect to blog page if post not found
+  if (!post) {
+    return (
+      <div className="min-h-screen">
+        <header className="bg-white/10 backdrop-blur-md border-b border-white/20">
+          <nav className="container mx-auto px-4 py-4">
+            <Link to="/" className="flex items-center space-x-2">
+              <span className="text-3xl">💱</span>
+              <span className="text-white font-bold text-xl">ConvertidorDivisas.es</span>
+            </Link>
+          </nav>
+        </header>
+        <section className="container mx-auto px-4 py-12 text-center">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">Artículo no encontrado</h1>
+            <p className="text-gray-600 mb-6">Lo sentimos, el artículo que buscas no existe.</p>
+            <Link to="/blog" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition">
+              Volver al Blog
+            </Link>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen">
       <header className="bg-white/10 backdrop-blur-md border-b border-white/20">
@@ -409,13 +438,94 @@ function BlogPost() {
       </header>
 
       <section className="container mx-auto px-4 py-12">
+        <nav className="text-sm text-white/80 mb-4 max-w-4xl mx-auto">
+          <Link to="/" className="hover:text-white">Inicio</Link> &gt; <Link to="/blog" className="hover:text-white">Blog</Link> &gt; <span>{post.title}</span>
+        </nav>
+        
         <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
-          <article className="prose prose-lg max-w-none">
-            <h1>Artículo del Blog</h1>
-            <p>Contenido del artículo...</p>
-          </article>
+          {/* Article Header */}
+          <header className="mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="px-4 py-2 bg-indigo-100 text-indigo-700 text-sm font-semibold rounded-full">
+                {post.category}
+              </span>
+              <span className="text-gray-500 text-sm">{post.readTime} lectura</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              {post.title}
+            </h1>
+            <div className="flex items-center gap-4 text-gray-600 text-sm">
+              <span>Por {post.author}</span>
+              <span>•</span>
+              <span>{post.date}</span>
+            </div>
+          </header>
+
+          {/* Article Content */}
+          <article 
+            className="prose prose-lg max-w-none"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+
+          {/* Related Articles */}
+          <div className="mt-12 pt-8 border-t border-gray-200">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Artículos Relacionados</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {Object.values(blogPostsData)
+                .filter(p => p.slug !== slug)
+                .slice(0, 2)
+                .map((relatedPost) => (
+                  <Link
+                    key={relatedPost.slug}
+                    to={`/blog/${relatedPost.slug}`}
+                    className="block p-4 border border-gray-200 rounded-lg hover:shadow-md transition"
+                  >
+                    <h4 className="font-bold text-gray-800 mb-2">{relatedPost.title}</h4>
+                    <p className="text-gray-600 text-sm">{relatedPost.excerpt}</p>
+                  </Link>
+                ))}
+            </div>
+          </div>
+
+          {/* Back to Blog */}
+          <div className="mt-8 text-center">
+            <Link 
+              to="/blog" 
+              className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition"
+            >
+              ← Volver al Blog
+            </Link>
+          </div>
         </div>
       </section>
+
+      {/* Schema.org BlogPosting markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "description": post.excerpt,
+          "image": post.image,
+          "datePublished": post.date,
+          "author": {
+            "@type": "Person",
+            "name": post.author
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "ConvertidorDivisas.es",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://convertidordivisas.es/logo.png"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://convertidordivisas.es/blog/${post.slug}`
+          }
+        })}
+      </script>
     </div>
   );
 }
