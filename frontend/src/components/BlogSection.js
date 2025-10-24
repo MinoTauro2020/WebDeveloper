@@ -1,45 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import blogPostsData from '../data/blogPosts';
 
 const BlogSection = ({ fullPage = false }) => {
-  const blogPosts = [
-    {
-      slug: 'como-ahorrar-cambio-divisas',
-      title: '10 Trucos para Ahorrar al Cambiar Divisas en 2025',
-      excerpt: 'Descubre cómo conseguir las mejores tasas de cambio y evitar comisiones ocultas al convertir tu dinero. Guía completa para viajeros y expatriados.',
-      date: '15 Enero 2025',
-      readTime: '5 min',
-      category: 'Ahorro',
-      image: '💰'
-    },
-    {
-      slug: 'mejores-apps-cambio-moneda',
-      title: 'Las 7 Mejores Apps para Cambiar Moneda sin Comisiones',
-      excerpt: 'Análisis completo de Wise, Revolut, N26 y más. Compara tasas, comisiones y funcionalidades para elegir la mejor app para tus necesidades.',
-      date: '12 Enero 2025',
-      readTime: '8 min',
-      category: 'Tecnología',
-      image: '📱'
-    },
-    {
-      slug: 'cuando-cambiar-dolares-euros-2025',
-      title: '¿Cuándo es el Mejor Momento para Cambiar Dólares a Euros en 2025?',
-      excerpt: 'Análisis del mercado Forex, predicciones de expertos y factores económicos que influyen en el tipo de cambio EUR/USD este año.',
-      date: '10 Enero 2025',
-      readTime: '6 min',
-      category: 'Análisis',
-      image: '📈'
-    },
-    {
-      slug: 'entender-tasas-cambio',
-      title: 'Cómo Entender las Tasas de Cambio: Guía para Principiantes',
-      excerpt: 'Todo lo que necesitas saber sobre tipos de cambio, factores que los afectan y cómo interpretar las fluctuaciones del mercado de divisas.',
-      date: '8 Enero 2025',
-      readTime: '7 min',
-      category: 'Educación',
-      image: '🎓'
-    }
-  ];
+  const blogPosts = Object.values(blogPostsData);
 
   const displayPosts = fullPage ? blogPosts : blogPosts.slice(0, 3);
 
@@ -65,8 +29,12 @@ const BlogSection = ({ fullPage = false }) => {
             data-testid={`blog-post-${index}`}
           >
             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
-              <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 flex items-center justify-center">
-                <span className="text-6xl">{post.image}</span>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={post.image} 
+                  alt={post.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-2 mb-3">
