@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 const AdSenseSlot = ({ slot = 'top' }) => {
   useEffect(() => {
-    // Cargar script de AdSense si existe el ID
-    const adsenseId = process.env.REACT_APP_ADSENSE_CLIENT;
+    // Cargar script de AdSense
+    const adsenseId = process.env.REACT_APP_ADSENSE_CLIENT || 'ca-pub-5914722248817610';
     if (adsenseId && adsenseId !== 'ca-pub-XXXXXXXXXXXXXXXX') {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -13,7 +13,7 @@ const AdSenseSlot = ({ slot = 'top' }) => {
     }
   }, []);
 
-  const adsenseId = process.env.REACT_APP_ADSENSE_CLIENT;
+  const adsenseId = process.env.REACT_APP_ADSENSE_CLIENT || 'ca-pub-5914722248817610';
   const isConfigured = adsenseId && adsenseId !== 'ca-pub-XXXXXXXXXXXXXXXX';
 
   // Configuración de slots por posición
@@ -65,7 +65,7 @@ const AdSenseSlot = ({ slot = 'top' }) => {
         className="adsbygoogle"
         style={{ display: 'block', ...config.style }}
         data-ad-client={adsenseId}
-        data-ad-slot={`slot-${slot}`}
+        data-ad-slot="1234567890"
         data-ad-format={config.format}
         data-full-width-responsive="true"
       ></ins>

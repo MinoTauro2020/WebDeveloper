@@ -461,11 +461,21 @@ function BlogPost() {
             </div>
           </header>
 
+          {/* AdSense Block at the beginning */}
+          <div className="my-8">
+            <AdSenseSlot slot="top" />
+          </div>
+
           {/* Article Content */}
           <article 
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* AdSense Block at the end */}
+          <div className="my-8">
+            <AdSenseSlot slot="bottom" />
+          </div>
 
           {/* Related Articles */}
           <div className="mt-12 pt-8 border-t border-gray-200">
