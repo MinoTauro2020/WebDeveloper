@@ -5,6 +5,9 @@ Allow: /euro-a-dolar
 Allow: /dolar-a-peso-mexicano
 Allow: /euro-a-peso-argentino
 Allow: /dolar-a-euro
+Allow: /dolar-a-peso-argentino
+Allow: /euro-a-peso-mexicano
+Allow: /libra-a-euro
 Allow: /blog/*
 
 Sitemap: https://convertidordivisas.com/sitemap.xml
