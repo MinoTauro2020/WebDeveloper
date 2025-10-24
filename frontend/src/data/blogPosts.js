@@ -398,7 +398,7 @@ const blogPostsData = {
         <li><strong>Establece un objetivo:</strong> Define tu tasa objetivo basándote en análisis histórico</li>
         <li><strong>Usa órdenes límite:</strong> Muchos brokers permiten ejecutar automáticamente cuando se alcanza tu tasa</li>
         <li><strong>Sigue el calendario económico:</strong> Planifica alrededor de eventos importantes (reuniones de bancos centrales, informes de empleo)</li>
-        <li><strong>Considera cost-averaging:</strong> Convierte cantidades regulares cada mes para promediar el tipo de cambio</li>
+        <li><strong>Considera promediar costos:</strong> Convierte cantidades regulares cada mes para promediar el tipo de cambio</li>
       </ul>
 
       <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Para Grandes Cantidades (+$50,000)</h3>
@@ -407,7 +407,7 @@ const blogPostsData = {
       </p>
       <ul class="list-disc pl-6 mb-4 text-gray-700 space-y-2">
         <li><strong>Usa un broker especializado:</strong> OFX, TorFX ofrecen mejores tasas que bancos para grandes sumas</li>
-        <li><strong>Considera forward contracts:</strong> Fija el tipo de cambio ahora para una conversión futura</li>
+        <li><strong>Considera contratos a futuro:</strong> Fija el tipo de cambio ahora para una conversión futura</li>
         <li><strong>Consulta con expertos:</strong> Un asesor de divisas puede ayudarte con estrategias complejas</li>
         <li><strong>No convertas todo a la vez:</strong> Divide en múltiples transacciones para gestionar el riesgo</li>
       </ul>
