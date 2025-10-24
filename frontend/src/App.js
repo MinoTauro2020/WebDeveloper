@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import CurrencyConverter from './components/CurrencyConverter';
@@ -7,6 +7,10 @@ import FAQSection from './components/FAQSection';
 import BlogSection from './components/BlogSection';
 import AdSenseSlot from './components/AdSenseSlot';
 import SEOHead from './components/SEOHead';
+import EuroADolar from './components/LandingPages/EuroADolar';
+import DolarAPesoMexicano from './components/LandingPages/DolarAPesoMexicano';
+import EuroAPesoArgentino from './components/LandingPages/EuroAPesoArgentino';
+import DolarAEuro from './components/LandingPages/DolarAEuro';
 
 function App() {
   return (
@@ -15,12 +19,13 @@ function App() {
         <SEOHead />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/euro-a-dolar" element={<ConversionPage from="EUR" to="USD" />} />
-          <Route path="/dolar-a-peso-mexicano" element={<ConversionPage from="USD" to="MXN" />} />
+          <Route path="/euro-a-dolar" element={<EuroADolar />} />
+          <Route path="/dolar-a-peso-mexicano" element={<DolarAPesoMexicano />} />
+          <Route path="/euro-a-peso-argentino" element={<EuroAPesoArgentino />} />
+          <Route path="/dolar-a-euro" element={<DolarAEuro />} />
           <Route path="/dolar-a-peso-argentino" element={<ConversionPage from="USD" to="ARS" />} />
           <Route path="/euro-a-peso-mexicano" element={<ConversionPage from="EUR" to="MXN" />} />
           <Route path="/libra-a-euro" element={<ConversionPage from="GBP" to="EUR" />} />
-          <Route path="/dolar-a-euro" element={<ConversionPage from="USD" to="EUR" />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
